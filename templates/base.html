@@ -30,7 +30,8 @@
                 <div class="nav-wrapper">
 
                     <div><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full"><i class="material-icons">menu</i></a></div>
-                    <img class="top-logo" src={{ url_for('static', filename='img/logo.png') }}></img>
+{#                    <img class="top-logo" src={{ url_for('static', filename='img/logo.png') }}></img>#}
+                <div class="headerTitle">TMHC Challenge Server</div>
                     <ul class="right hide-on-med-and-down">
                         {% if logged_in %}
                         <li><a href="{{ url_for('users.logout') }}">Logout</a></li>

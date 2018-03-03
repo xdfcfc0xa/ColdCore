@@ -3,6 +3,12 @@ body {
   padding-top: 74px;
 }
 
+.headerTitle {
+  padding-left: 15px;
+  font-size: 20px;
+  display: inline-block;
+}
+
 .nav-fixed{
   position: fixed;
   right: 0;

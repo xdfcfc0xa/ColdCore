@@ -4,11 +4,11 @@ from datetime import datetime
 production = os.getenv("PRODUCTION", None) is not None
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-ctf_name = "IceCTF"
+ctf_name = "TMHCO"
 eligibility = "In order to be eligible for prizes, all members of your team must be Icelandic residents, and you must not have more than three team members."
-tagline = "The Icelandic Hacking Competition"
+tagline = "TMHC Challenge Server"
 # IRC Channel
-ctf_chat_channel = "#IceCTF"
+ctf_chat_channel = "#THMC"
 ctf_home_url = "https://icec.tf"
 
 # Serve javascript libraries from CDN

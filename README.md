@@ -1,6 +1,6 @@
-# ColdCore
+# THMC Challenge Server
 
-This is the platform for IceCTF. It is based off of the platform for TJCTF, [TJCSec/ctf-platform](https://github.com/TJCSec/ctf-platform), although with hefty changes.
+This is the CTF platform for The Many Hats Club. It is based off of the platform for IceCTF and TJCTF, [TJCSec/ctf-platform](https://github.com/TJCSec/ctf-platform), although with hefty changes.
 
 ## Installation
 
@@ -59,8 +59,3 @@ with information from all the problem.yml files, and automatically generated
 static file names, and automatic substitutions for static file links in
 problem.yml. More documentation on this to come soon.
 
-## Contributing
-
-There are some missing features in the platform, and if you would like to contribute, feel free to send pull requests!
-
-If you find any issues or would like to send a feature request feel free to create an issue.
