@@ -87,7 +87,7 @@ def debug_app():
 # Manage Peewee database sessions and Redis
 @app.before_request
 def before_request():
-    db.connect()
+    db.connect(reuse_if_open=True)
     g.redis = redis.StrictRedis(host=config.redis.host, port=config.redis.port, db=config.redis.db)
     g.connected = True
 
