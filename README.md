@@ -1,6 +1,6 @@
 # TMHC Challenge Server
 
-This is the CTF platform for The Many Hats Club. It is based off of the platform IceCTF 2016, [IceCTF/ColdCore](https://github.com/IceCTF/ColdCore), although with hefty changes.
+This is the CTF platform for The Many Hats Club. It is based on the platform for IceCTF 2016, [IceCTF/ColdCore](https://github.com/IceCTF/ColdCore), although with hefty changes.
 
 ## Installation
 
