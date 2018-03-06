@@ -64,21 +64,24 @@ def register():
             flash("Passwords do not match!")
             return redirect(url_for('.register'))
 
-        join_team = bool(int(request.form["join_team"].strip()))
+        # join_team = bool(int(request.form["join_team"].strip()))
+        join_team = True
         if join_team:
             team_key = request.form["team_key"].strip()
-            t = team.get_team(key=team_key)
+            t = None
+            if team_key:
+                t = team.get_team(key=team_key)
             if not t:
                 flash("This team could not be found, check your team key.")
                 return redirect(url_for('.register'))
-        else:
-            team_name = request.form["team_name"].strip()
-            team_affiliation = request.form["team_affiliation"].strip()
-            try:
-                t = team.create_team(team_name, team_affiliation)
-            except exceptions.ValidationError as e:
-                flash(str(e))
-                return redirect(url_for('.register'))
+        # else:
+        #     team_name = request.form["team_name"].strip()
+        #     team_affiliation = request.form["team_affiliation"].strip()
+        #     try:
+        #         t = team.create_team(team_name, team_affiliation)
+        #     except exceptions.ValidationError as e:
+        #         flash(str(e))
+        #         return redirect(url_for('.register'))
 
         # note: this is technically a race condition, the team can exist without a user but w/e
         # the team keys are impossible to predict
