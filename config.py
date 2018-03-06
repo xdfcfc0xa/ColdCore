@@ -5,7 +5,8 @@ production = os.getenv("PRODUCTION", None) is not None
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 ctf_name = "TMHC"
-eligibility = "In order to be able to join this server you will need a team key for one of the teams allowed to compete here."
+eligibility = "In order to be able to join this server you will need a team key for one of the teams allowed to compete " \
+              "here. This site is still being developed. If you would like to contribute you probably know who to contact."
 tagline = "TMHC Challenge Server"
 # IRC Channel
 ctf_chat_channel = "#TMHC"
