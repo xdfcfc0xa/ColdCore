@@ -76,7 +76,7 @@ with open("secrets") as f:
     secret = namedtuple('SecretsDict', _secret.keys())(**_secret)
 
 _redis = {
-    'host': 'localhost',
+    'host': secret.redis_host_ip,
     'port': 6379,
     'db': 0
 }

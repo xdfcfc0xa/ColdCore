@@ -59,3 +59,17 @@ with information from all the problem.yml files, and automatically generated
 static file names, and automatic substitutions for static file links in
 problem.yml. More documentation on this to come soon.
 
+## wetty
+
+#### setup instructions (Debian 9):
+`curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
+`apt-get install -y nodejs`
+`git clone https://github.com/krishnasrinivas/wetty`
+`cd wetty`
+`npm install node-gyp`
+`apt-get install build-essential`
+`npm install`
+`npm install -g forever`
+`forever start app.js -p 3000`
+
+
