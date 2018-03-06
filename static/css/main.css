@@ -3,6 +3,10 @@ body {
   padding-top: 74px;
 }
 
+.tab.disabled {
+  pointer-events: none;
+}
+
 .headerTitle {
   padding-left: 15px;
   font-size: 20px;
@@ -138,6 +142,10 @@ body {
 
 .tabs .tab a {
   color: #2196F3 !important;
+}
+
+.tabs .tab.disabled a {
+  color: silver !important;
 }
 
 .tabs .indicator {

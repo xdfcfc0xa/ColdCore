@@ -39,13 +39,13 @@
         <div class="row no-bot">
           <div class="input-field col s6">
               <select required id="background" name="background">
-                {{select.genoption(select.Backgrounds, selected="university")|safe}}
+                {{select.genoption(select.Backgrounds, selected="other")|safe}}
               </select>
               <label for="background">Background</label>
           </div>
           <div class="input-field col s6">
               <select required name="country" id="country">
-                  {{select.genoption(select.Countries, header='<option value="" disabled selected>Select Country</option>')|safe}}
+                  {{select.genoption(select.Countries, selected="UGA")|safe}}
               </select>
               <label>Country</label>
           </div>
@@ -68,8 +68,8 @@
             <input id="join_team-input" name="join_team" type="hidden" value="0"/>
             <div class="">
                 <ul class="tabs">
-                    <li class="tab col s6"><a class="active truncate" href="#create-team" id="create-team-btn">Create new Team</a></li>
-                    <li class="tab col s6"><a class="truncate" href="#join-team" id="join-team-btn">Join existing team</a></li>
+                    <li class="tab col s6 disabled"><a class="disabled truncate" href="#create-team" id="create-team-btn">Create new Team</a></li>
+                    <li class="tab col s6"><a class="active truncate" href="#join-team" id="join-team-btn">Join existing team</a></li>
                 </ul>
             </div>
             <div id="create-team">
