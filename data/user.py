@@ -64,7 +64,7 @@ def create_user(username, email, password, background, country, team, tshirt_siz
     assert team is not None
     confirmation_key = utils.misc.generate_confirmation_key()
 
-    user = User.create(username=username, email=email,
+    user = User.create(username=username, email=email,email_confirmed=True,
                        background=background, country=country,
                        tshirt_size=tshirt_size, gender=gender,
                        email_confirmation_key=confirmation_key,
