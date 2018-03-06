@@ -62,14 +62,18 @@ problem.yml. More documentation on this to come soon.
 ## wetty
 
 #### setup instructions (Debian 9):
-`curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
-`apt-get install -y nodejs`
-`git clone https://github.com/krishnasrinivas/wetty`
-`cd wetty`
-`npm install node-gyp`
-`apt-get install build-essential`
-`npm install`
-`npm install -g forever`
-`forever start app.js -p 3000`
+
+##### Install nodejs
+1. `curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -`
+1. `apt-get install -y nodejs`
+
+##### Install wetty
+1. `git clone https://github.com/krishnasrinivas/wetty`
+1. `cd wetty`
+1. `npm install node-gyp`                           (this is a fix for some unresolved build errors you might encounter)
+1. `apt-get install build-essential`                (this step is probably overkill but the process seems to complain about needing stuff thats in this package)
+1. `npm install`
+1. `npm install -g forever`
+1. `forever start app.js -p 3000`
 
 
