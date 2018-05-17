@@ -33,8 +33,8 @@ immediate_scoreboard = False
 disallowed_domain = "icec.tf"
 
 # Where the static stuff is stored
-static_prefix = "/problem-static/"
-static_dir = "{}/problem_static/".format(os.path.dirname(os.path.abspath(__file__)))
+static_prefix = "/static/problem-static/"
+static_dir = "{}/static/problem_static/".format(os.path.dirname(os.path.abspath(__file__)))
 custom_stylesheet = "css/main.css"
 
 # Shell accounts?
